@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="ko" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premium Portfolio</title>
-  <meta name="description" content="Responsive portfolio showcasing projects, skills, and contact form with GitHub integration and dark mode." />
+  <title>프리미엄 포트폴리오</title>
+  <meta name="description" content="반응형 포트폴리오 사이트, 프로젝트와 기술을 소개합니다." />
+  <!-- Seed Design CSS (Daangn) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@seed-design/css@latest/dist/seed.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,42 +14,42 @@
   <header class="navbar" id="navbar">
     <div class="logo">MyPortfolio</div>
     <nav class="nav-links" id="navLinks">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#hero">홈</a>
+      <a href="#about">소개</a>
+      <a href="#skills">기술</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락처</a>
     </nav>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <button class="hamburger" id="hamburger" aria-label="메뉴 토글">
       <span></span><span></span><span></span>
     </button>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <button class="theme-toggle" id="themeToggle" aria-label="다크 모드 토글">🌙</button>
   </header>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <h1>Hi, I’m <span class="highlight">Your Name</span></h1>
-      <p>Full‑stack developer • UI/UX enthusiast • Open‑source contributor</p>
-      <a href="#contact" class="cta-btn">Get in Touch</a>
+      <h1>안녕하세요, 저는 <span class="highlight">Your Name</span> 입니다</h1>
+      <p>풀스택 개발자 • UI/UX 열정가 • 오픈소스 기여자</p>
+      <a href="#contact" class="cta-btn">연락하기</a>
     </div>
     <div class="hero-bg"></div>
   </section>
 
   <!-- About Section -->
   <section class="about" id="about">
-    <h2>About Me</h2>
+    <h2>소개</h2>
     <div class="about-grid">
-      <img src="images/profile.jpg" alt="Profile picture of Your Name" class="profile-pic" />
+      <img src="/Users/nsh/.gemini/antigravity/brain/3da5f3f2-ad42-4b68-b54e-a2a1b2afa87f/eth_penguin_1778903998852.png" alt="프로필 사진" class="profile-pic" />
       <div class="about-text">
-        <p>Brief introduction about yourself, background, and interests.</p>
+        <p>짧은 자기소개와 배경, 관심사를 여기에 작성합니다.</p>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section class="skills" id="skills">
-    <h2>Skills</h2>
+    <h2>기술 스택</h2>
     <ul class="skill-list">
       <li>HTML5</li>
       <li>CSS3 (Flexbox, Grid)</li>
@@ -59,36 +61,36 @@
 
   <!-- Projects Section -->
   <section class="projects" id="projects">
-    <h2>Projects</h2>
+    <h2>프로젝트</h2>
     <div class="projects-container" id="projectsContainer">
       <!-- Project cards will be injected here -->
     </div>
-    <div class="loader" id="loader">Loading projects...</div>
+    <div class="loader" id="loader">프로젝트를 로드 중...</div>
     <div class="error" id="errorMsg" hidden></div>
-    <div class="empty" id="emptyMsg" hidden>No projects to display.</div>
+    <div class="empty" id="emptyMsg" hidden>표시할 프로젝트가 없습니다.</div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2>Contact Me</h2>
+    <h2>문의하기</h2>
     <form id="contactForm" novalidate>
       <div class="form-group">
-        <label for="name">Name</label>
+        <label for="name">이름</label>
         <input type="text" id="name" name="name" required />
         <span class="error-msg" id="nameError"></span>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">이메일</label>
         <input type="email" id="email" name="email" required />
         <span class="error-msg" id="emailError"></span>
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
+        <label for="message">메시지</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         <span class="error-msg" id="messageError"></span>
       </div>
-      <button type="submit" class="submit-btn">Send</button>
-      <div class="form-success" id="formSuccess" hidden>Thank you! Your message has been sent.</div>
+      <button type="submit" class="submit-btn">보내기</button>
+      <div class="form-success" id="formSuccess" hidden>감사합니다! 메시지가 전송되었습니다.</div>
     </form>
   </section>
 
@@ -102,7 +104,7 @@
   </footer>
 
   <!-- Scroll to Top Button -->
-  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <button class="scroll-top" id="scrollTop" aria-label="맨 위로 이동">↑</button>
 
   <script src="js/main.js" defer></script>
 </body>
